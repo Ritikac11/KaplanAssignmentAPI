@@ -18,8 +18,8 @@ namespace KaplanAssignmentApi.Controllers
             _service = service;
         }
 
-        // GET: api/Assignments/5
-        [HttpGet("{id}")]
+        // GET: api/Assignment/5
+        [HttpGet("{id}"), ActionName(nameof(GetByIdAsync))]
         public async Task<ActionResult<Assignment>> GetByIdAsync(int id)
         {
             if(id <= 0)
@@ -30,13 +30,13 @@ namespace KaplanAssignmentApi.Controllers
             return assignment == null ? NotFound() : (ActionResult<Assignment>)Ok(assignment);
         }
 
-        // GET: api/Assignments?tags=Java
-        [HttpGet("search")]
-        public ActionResult<IEnumerable<Assignment>> GetByTag([FromQuery]string[] tags)
+        // POST: api/Assignment/search
+        [HttpPost("search")]
+        public ActionResult<IEnumerable<Assignment>> SearchByTag([FromBody]string[] tags)
         {
             var assignment = _service.GetByTags(tags);
 
-            if (assignment == null)
+            if (assignment == null & assignment.Count() > 0)
             {
                 return NotFound("No assignment found");
             }

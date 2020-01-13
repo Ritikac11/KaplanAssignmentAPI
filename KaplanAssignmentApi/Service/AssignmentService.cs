@@ -1,4 +1,5 @@
 ﻿using KaplanAssignmentApi.Data;
+using KaplanAssignmentApi.Extensions;
 using KaplanAssignmentApi.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -33,8 +34,7 @@ namespace KaplanAssignmentApi.Service
         public IEnumerable<Assignment> GetByTags(string[] tags)
         {
             var assignment = _context.Assignments.ToList().
-                            Where(i => i.Tags.Any(j => tags.Contains(j))).
-                            Select(o => o);
+                            Where(i => i.Tags.Any(j => tags.ToLowerCase().Contains(j.ToLower())));
             return assignment.ToList();
         }
     }
