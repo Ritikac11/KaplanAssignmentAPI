@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaplanAssignmentApi", "KaplanAssignmentApi\KaplanAssignmentApi.csproj", "{50D1A81A-E1B3-4EDF-83AE-30B1E928540F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaplanAssignmentApi.UnitTest", "KaplanAssignmentApi.UnitTest\KaplanAssignmentApi.UnitTest.csproj", "{48F85990-C336-447E-B031-ED64A6D7EBF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50D1A81A-E1B3-4EDF-83AE-30B1E928540F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D1A81A-E1B3-4EDF-83AE-30B1E928540F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D1A81A-E1B3-4EDF-83AE-30B1E928540F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D1A81A-E1B3-4EDF-83AE-30B1E928540F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F85990-C336-447E-B031-ED64A6D7EBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F85990-C336-447E-B031-ED64A6D7EBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F85990-C336-447E-B031-ED64A6D7EBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F85990-C336-447E-B031-ED64A6D7EBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE1AD6EE-157C-43D9-BBB9-4CE039DB9D48}
+	EndGlobalSection
+EndGlobal
